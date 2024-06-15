@@ -1,0 +1,135 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and footer styles */
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.movie__details, .movie__schedule, .seatArrangement, .buyingTickets {
+  margin-bottom: 20px;
+}
+
+.movie__details {
+  display: flex;
+  align-items: center;
+}
+
+.movie__poster {
+  width: 150px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.movie__description p {
+  margin: 5px 0;
+}
+
+.schedule__item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book__button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.book__button:hover {
+  background-color: #218838;
+}
+
+.seatArrangementTable {
+  margin: 0 auto;
+}
+
+.seats {
+  display: flex;
+  justify-content: center;
+}
+
+.leftSide, .middleSide, .rightSide {
+  margin: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #28a745;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.status .item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.status .item p {
+  margin: 0 0 0 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn__buy {
+  margin-top: 20px;
+}
+/* Booking specific styles */
+.bookingDetails {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn__buy {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn__buy:hover {
+  background-color: #c82333;
+}

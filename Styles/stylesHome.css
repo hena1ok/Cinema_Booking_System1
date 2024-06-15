@@ -1,0 +1,224 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+/* Hero section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.slide h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn-book-now {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: relative; /* Ensure it is positioned relative to its parent */
+  z-index: 1; /* Ensure it is above other elements */
+}
+
+.btn-book-now:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Navigation dots */
+.navigation-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-top: 1rem;
+  top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #007bff;
+}
+/* Movie card styles */
+.movie-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+.movie-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.movie-item h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.movie-item p {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.movie-item .read-more,
+.movie-item .read-less {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.movie-item .read-more:hover,
+.movie-item .read-less:hover {
+  text-decoration: underline;
+}
+
+
+
+.main-content {
+  padding: 2em 0;
+}
+
+.featured-movies {
+  background-color: white;
+  padding: 2em 0;
+}
+
+.featured-movies h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+/* Movie card styles */
+.movie-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+.movie-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.movie-item h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.movie-item p {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.movie-item .short-desc {
+  height: 3.6em; /* This is approximately 2 lines */
+  position: relative;
+}
+
+.movie-item .short-desc:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.movie-item .full-desc {
+  display: none;
+}
+
+.movie-item .read-more,
+.movie-item .read-less {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.movie-item .read-more:hover,
+.movie-item .read-less:hover {
+  text-decoration: underline;
+
+}

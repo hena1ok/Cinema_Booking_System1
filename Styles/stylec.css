@@ -1,0 +1,144 @@
+/* GENERAL STYLES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+a:hover{
+  text-decoration: underline;
+}
+/* HEADER STYLES */
+.header{
+  background-color: rgb(19, 22, 26);
+  width: 100%;
+  margin-bottom: 50px;
+}
+.header__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  min-height: 60px;
+}
+
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+  transition: display 2s;
+}
+
+.nav__list{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.nav__link{
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  transition: all 0.4s;
+}
+
+.nav__link:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 90%;
+  top: 1rem;
+}
+
+.bar{
+  height: 2px;
+  width: 27px;
+  background-color: white;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+.nav--open{
+  display: block !important;
+}
+
+.hamburger--open .bar:nth-child(1){
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger--open .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger--open .bar:nth-child(3){
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.profile{
+  color: white;
+  background-color: rgb(52, 85, 230);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.profile:hover{
+  color: black;
+  background-color: white;
+  border: 1px rgb(52, 85, 230) solid;
+}
+
+
+@media(max-width: 650px){
+  /* HEADER RESPONSIVE */
+  .header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar{
+    background-color: rgb(10, 22, 26);
+    width: 100%;
+    padding: 10px 0 25px;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+    display: none;
+  }
+
+  .nav__list{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .nav__link{
+    font-size: 14px;
+  }
+
+  .hamburger{
+    display: block;
+  }
+  .logo{
+    color: wheat;
+  }
+
+}
