@@ -19,7 +19,7 @@
   <a href="index.php" class="logo">Millennium Cinema</a>
   <nav class="navbar">
     <ul class="nav__list">
-      <li class="nav__item"><a href="../Admin/Create.php" class="nav__link">Create</a></li>
+      <li class="nav__item"><a href="../AdmCreate.php" class="nav__link">Create</a></li>
       <li class="nav__item"><a href="../Admin/Update.php" class="nav__link">Update</a></li>
       <li class="nav__item"><a href="../Admin/Delete.php" class="nav__link">Delete</a></li>
       <li class="nav__item"><a href="../Admin/Read.php" class="nav__link">Read</a></li> 

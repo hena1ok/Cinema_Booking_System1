@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium Cinema - Movies</title>
+    <link rel="stylesheet" href="styleSchedule.css">
+  
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="logo">Millennium Cinema</a>
+                <nav class="navbar">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Schedule</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Location</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link profile">Sign In</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="side">
+            <section class="searchbar">
+                <input type="text" placeholder="Search..." id="search">
+            </section>
+            <section class="categories">
+                <h2>Category</h2>
+                <label><input type="checkbox" id="Adventure" name="Adventure"> Adventure</label>
+                <label><input type="checkbox" id="comedy" name="comedy"> Comedy</label>
+                <label><input type="checkbox" id="sci-fi" name="sci-fi"> Sci-fi</label>
+                <label><input type="checkbox" id="Thriller" name="Thriller"> Thriller</label>
+                <label><input type="checkbox" id="Action" name="Action"> Action</label>
+                <label><input type="checkbox" id="American" name="American"> American</label>
+                <label><input type="checkbox" id="Ethiopian" name="Ethiopian"> Ethiopian</label>
+                <label><input type="checkbox" id="Others" name="Others"> Others</label>
+            </section>
+        </aside>
+
+        <section class="main">
+            <div class="slider">
+                <div class="frame-display">
+                    <button class="btn buy-ticket">Book Ticket</button>
+                    <button class="btn play-trailer">Play Trailer</button>
+                </div>
+            </div>
+
+            <section class="container movs"></section>
+        </section>
+
+        <section class="trailer">
+            <video class="vid" controls></video>
+            <button class="btn close" onclick="toggleVideo()">Close</button>
+        </section>
+    </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__info">
+                <a href="#" class="logo">Millennium Cinema</a>
+                <p>&copy; 2024 Millennium Cinema. All Rights Reserved.</p>
+            </div>
+            <nav class="footer__navbar">
+                <ul class="footer__nav__list">
+                    <li class="footer__nav__item"><a href="#" class="nav__link">Privacy Policy</a></li>
+                    <li class="footer__nav__item"><a href="#" class="nav__link">Terms of Service</a></li>
+                    <li class="footer__nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                    <li class="footer__nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <a href="#" class="social-link"><img src="../Assets/HomeAssets/Icons/instagram1_x2.svg"
+                        alt="Instagram"></a>
+                <a href="#" class="social-link"><img src="../Assets/HomeAssets/Icons/telegram1_x2.svg"
+                        alt="Telegram"></a>
+                <a href="#" class="social-link"><img src="../Assets/HomeAssets/Icons/facebook1_x2.svg"
+                        alt="Facebook"></a>
+                <a href="#" class="social-link"><img src="../Assets/HomeAssets/Icons/twitter2_x2.svg" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptsSchedule.js"></script>
+</body>
+
+</html>
